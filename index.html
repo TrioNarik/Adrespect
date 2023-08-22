@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MKDnet Roman Kociuba">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme_fonts.css">
+    <link rel="stylesheet" href="./assets/css/theme_settings.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <title>Giardesign :: Zadanie rekrutacyjne :: 2023</title>
+</head>
+<body>
+    <header class="container d-flex justify-content-between align-items-center py-3">
+        <div class="navbar-brand">
+            <a href="./">
+                <img id="logo" src="./assets/img/giarddesign_logo.png" alt="Logo" />
+            </a>
+        </div>
+        <nav class="d-flex align-items-center">
+            <ul class="list-unstyled d-flex gap-2">
+                <li class="has-submenu">
+                    <a href="#">Oferta
+                        <span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.13017 4.81427C1.95661 4.6407 1.95661 4.3593 2.13017 4.18573C2.28796 4.02794 2.53487 4.0136 2.70887 4.1427L2.75871 4.18573L6 7.42681L9.24129 4.18573C9.39907 4.02794 9.64599 4.0136 9.81998 4.1427L9.86983 4.18573C10.0276 4.34352 10.042 4.59043 9.91286 4.76442L9.86983 4.81427L6.31427 8.36983C6.15648 8.52761 5.90957 8.54196 5.73558 8.41286L5.68573 8.36983L2.13017 4.81427Z" fill="#111111"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="submenu">
+                    <li><a href="#">Usługa 1</a></li>
+                    <li><a href="#">Usługa 2</a></li>
+                    <li class="has-submenu">
+                        <a href="#">Podusługi</a>
+                        <ul class="submenu">
+                        <li><a href="#">Podusługa 1</a></li>
+                        <li><a href="#">Podusługa 2</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li><a href="#firma">O firmie</a></li>
+                <li><a href="#realizacje">Realizacje</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="search_form">
+                <button type="button" class="btn search_toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.25C3.71979 0.25 0.25 3.71979 0.25 8C0.25 12.2802 3.71979 15.75 8 15.75C9.87001 15.75 11.5853 15.0877 12.9242 13.9848L18.4697 19.5303L18.5538 19.6029C18.8474 19.8208 19.2641 19.7966 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L13.9848 12.9242C15.0877 11.5853 15.75 9.87001 15.75 8C15.75 3.71979 12.2802 0.25 8 0.25ZM8 1.75C11.4518 1.75 14.25 4.54822 14.25 8C14.25 11.4518 11.4518 14.25 8 14.25C4.54822 14.25 1.75 11.4518 1.75 8C1.75 4.54822 4.54822 1.75 8 1.75Z" fill=""/>
+                    </svg>
+                </button>
+                <form class="dropdown-menu p-2 p-md-4">
+                    <input type="text" name="search" class="form-control" placeholder="Szukaj...">
+                    <button type="submit" class="btn"><i class="bi bi-eye-fill"></i></button>
+                </form>
+            </div>
+        </nav>
+       
+    </header>
+
+    <main>
+        <!-- Slider -->
+        <section class="hero beige">
+            <div class="container-fluid">          
+                <div class="container slider">
+                    <!-- First Slider -->
+                    <div class="slider-item active">
+                        <div class="row align-items-center py-xl-5">
+                            <div class="col-12 col-xl-6 py-3 py-xl-5 pe-xl-5">
+                                <h1 class="text-center text-xl-start">Nowoczesna<br />aranżacja<br />Twojego ogrodu </h1>
+                                <p class="py-xl-5 pe-5">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                                <div class="d-flex justify-content-between pe-xl-5">
+                                    <button class="btn green d-flex"><span>Skontaktuj się z nami</span></button>
+                                    <button class="btn d-flex gap-2">
+                                        <span>Zobacz nasze realizacje</span>
+                                        <span>
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6 photo">
+                                <img class="img-fluid" src="./assets/img/slider_1.jpg" alt="" />
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Next Slider -->
+                    <div class="slider-item active">
+                        <div class="row align-items-center py-xl-5">
+                            <div class="col-12 col-xl-6 py-3 py-xl-5 pe-xl-5">
+                                <h1 class="text-center text-xl-start">Marka<br />GiardDesign<br />to doświadczenie</h1>
+                                <p class="py-xl-5 pe-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae obcaecati incidunt libero repellat facilis. Quas magnam, sed accusantium harum</p>
+                                <div class="d-flex justify-content-between pe-xl-5">
+                                    <button class="btn green d-flex"><span>Nasze projekty</span></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6 photo">
+                                <img class="img-fluid" src="./assets/img/slider_2.jpg" alt="" />
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- End Slider Container -->
+                </div>
+                <!-- Slider Control -->
+                <div class="slider-controls">
+                    <button class="prev-slide">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.7951 22.9393C10.2093 23.5251 10.2093 24.4749 10.7951 25.0607L20.3411 34.6066C20.9268 35.1924 21.8766 35.1924 22.4624 34.6066C23.0482 34.0208 23.0482 33.0711 22.4624 32.4853L13.9771 24L22.4624 15.5147C23.0482 14.9289 23.0482 13.9792 22.4624 13.3934C21.8766 12.8076 20.9268 12.8076 20.3411 13.3934L10.7951 22.9393ZM36.1442 22.5L11.8558 22.5L11.8558 25.5L36.1442 25.5L36.1442 22.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <button class="next-slide">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.2049 25.0607C37.7907 24.4749 37.7907 23.5251 37.2049 22.9393L27.6589 13.3934C27.0732 12.8076 26.1234 12.8076 25.5376 13.3934C24.9518 13.9792 24.9518 14.9289 25.5376 15.5147L34.0229 24L25.5376 32.4853C24.9518 33.0711 24.9518 34.0208 25.5376 34.6066C26.1234 35.1924 27.0732 35.1924 27.6589 34.6066L37.2049 25.0607ZM11.8558 25.5H36.1442V22.5H11.8558V25.5Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oferta -->
+        <section class="grey py-5">
+            <div class="container my-3 py-xl-5">
+                <div class="row px-5">
+                    <div class="col-12 col-xl-8 mx-xl-5">
+                        <p id="oferta" class="subtitle">Oferta</p>
+                        <h2>Działamy kompleksowo</h2>
+                        <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grey">
+            <div class="container pb-5">
+                <div class="row pb-xl-5">
+                    <!-- First Card -->
+                    <div class="col-12 col-xl-4 first-card">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="./assets/img/icon_projets.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Projekty</h4>
+                                <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                                <a href="#">
+                                    <span>Dowiedz się więcej</span>
+                                    <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+                                    </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="col-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="./assets/img/icon_visual.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Wizualizacje</h4>
+                                <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                                <a href="#">
+                                    <span>Dowiedz się więcej</span>
+                                    <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+                                    </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="col-12 col-xl-4 last-card">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="./assets/img/icon-realiz.png" alt="Icon">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Realizacje</h4>
+                                <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                                <a href="#">
+                                    <span>Dowiedz się więcej</span>
+                                    <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#1B5B31"/>
+                                    </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>  
+        </section>
+        <!-- O Firmie -->
+        <section class="green">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center py-3 py-xl-5 flex-column-sm-reverse">
+                        <div class="col-12 col-xl-6 image-column">
+                            <img class="img-fluid" src="./assets/img/photo.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-xl-6 py-3 p-xl-5">
+                            <p id="firma" class="subtitle">O firmie</p>
+                            <h2>Tworzymy<br />z <em>pasją</em></h2>
+                            <p class="py-md-5">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                            <a href="#" class="btn frame">
+                                <span>Poznaj nas bliżej</span>
+                                <span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Realizacje Header -->
+        <section class="beige">
+            <div class="container">
+                <div class="row  mx-xl-2 py-xl-5">
+                    <div class="col-xs-12  mx-xl-3 py-2 py-xl-5">
+                        <p id="realizacje" class="subtitle">Realizacje</p>
+                        <h2>Nasze <em>projekty</em></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="beige">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="gallery-wrapper">
+                        <ul class="gallery">
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_1.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_2.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_3.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_4.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_5.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_6.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_7.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_8.jpg"></a></li>
+                            <li><a href="#" class="open-modal"><img src="./assets/img/gallery/gallery_9.jpg"></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn expand-button">
+                        <span>Rozwiń</span>
+                        <span>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#111111"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="imageModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <img id="modalImage" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social  -->
+        <section class="py-3">
+            <div class="container p-xl-5">
+                <div class="row mx-xl-5 py-2 py-xl-5 green align-items-end text-center text-xl-start">
+                    <div class="col-12 col-xl-9 p-2 p-xl-5">
+                        <h3>Zostańmy w kontakcie!</h3>
+                        <h3>Znajdziesz nas na <em>Instagramie</em>.</h3>
+                    </div>
+                    <div class="col-12 col-xl-3 p-2 p-xl-5">
+                        <p>Śledź nasze<br />najnowsze realizacje!</p>
+                        <a class="btn social grey" href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="dark">
+        <div class="container py-2 p-xl-5">
+            <div class="row mx-xl-5 align-items-center pb-2 pb-xl-5 border-bottom">
+                <div class="col-2 px-0">
+                    <a href="./">
+                        <img src="./assets/img/giarddesign_logo_white.png" alt="Logo" />
+                    </a>
+                </div>
+                <div class="col-10 px-0 d-flex gap-3 align-items-center justify-content-end">
+                    <div class="d-none d-xl-block">Daj znać, co możemy dla Ciebie zrobić!</div>
+                    <a class="btn green" href="#">Skontaktuj się z nami</a>
+                </div>
+            </div>
+            <!-- Footer Menu -->
+            <div class="row mx-xl-5 align-items-center py-2 py-xl-5">
+                <div class="col-12 col-xl-6 px-0">
+                    <ul class="list-unstyled d-flex gap-5 justify-content-center justify-content-xl-start footer_menu">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-6 px-0 d-flex gap-3 align-items-center justify-content-center justify-content-xl-end">
+                    <div>000-000-000</div>
+                    <div class="email">giarddesign@kontakt.pl</div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mx-xl-5 pt-xl-5 align-items-center flex-column-sm-reverse py-2">
+                <div class="col-12 col-xl-6 px-0 py-1 d-flex copyright justify-content-center justify-content-xl-start">
+                    <p>Prawa zastrzeżone © 2022</p>
+                </div>
+                <div class="col-12 col-xl-6 px-0 py-1 copyright_logo d-flex gap-1 gap-xl-3 align-items-center justify-content-center justify-content-xl-end">
+                    <div class="d-none d-xl-block">made by</div>
+                    <div>
+                        <a href="https://adrespect.pl/"><img src="./assets/img/logo-full-light.png" alt="Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
