@@ -1,5 +1,5 @@
 # Adrespect
 Zadanie rekrutacyjne:
 - Bootstrap 5
-- Masonry
+- Masonry JS
 - RWD
