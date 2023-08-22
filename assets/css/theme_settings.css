@@ -1,0 +1,167 @@
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-header: 'Montserrat', sans-serif;
+
+    --size-extra: clamp(25px, 4vw, 60px);
+    --size-big: clamp(20px, 3.5vw, 48px);
+    --size-xl: clamp(18px, 3vw, 40px);
+    --size-l: clamp(16px, 2.5vw, 28px);
+    --size-normal: clamp(12px, 1.8vw, 16px);
+    --size-s: clamp(10px, 1.5vw, 14px);
+    --size-xs: clamp(9px, 3vw, 12px);
+
+    --primary-color: #111111;
+    --secondary-color: #1B5B31;
+
+
+    --white-color: #FFF;
+    --beige-color: #DCC1AB;
+    --grey-color: #F5F0EC;
+
+
+}
+
+/* ==== Main settings ==== */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--size-normal);
+    background: var(--white-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-header);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--size-extra);
+}
+
+h2 {
+    font-size: var(--size-big);
+}
+
+h3 {
+    margin: 0;
+    font-size: var(--size-xl);
+    font-weight: 400;
+    line-height: 1;
+}
+
+h4 {
+    font-size: var(--size-l);
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    padding: .65em 1.2em;
+    font-size: var(--size-normal);
+    border-radius: 1.5em;
+}
+a, 
+.btn {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.btn.show {
+    border-color: transparent;
+}
+a span {
+    display: inline-block;
+}
+.border-bottom {
+    border-color: var(--grey-color);
+}
+
+/* ===== SubTitle ======= */
+.subtitle {
+    font-size: var(--size-xs);
+}
+.grey .subtitle {
+    color: var(--secondary-color);
+}
+.beige .subtitle {
+    color: var(--secondary-color);
+}
+.green .subtitle {
+    color: var(--grey-color);
+}
+/* ===== BG COLOR ======= */
+.beige,
+.dark,
+.green,
+.grey {
+    position: relative;
+    overflow: hidden;
+}
+.beige {
+    background-color: var(--beige-color);
+}
+.dark {
+    color: var(--grey-color);
+    background-color: var(--primary-color);
+}
+.green {
+    color: var(--grey-color);
+    background-color: var(--secondary-color);
+}
+.grey {
+    background-color: var(--grey-color);
+}
+/* ==== Modal ==== */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-content button.close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-color);
+    border: none;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.modal-content button.close span {
+    display: block;
+    font-size: 1.2rem;
+}
+.modal-content button.close:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+/* === Reverse === */
+@media (max-width: 768px) {
+    .flex-column-sm-reverse {
+        flex-direction: column-reverse;
+    }
+}

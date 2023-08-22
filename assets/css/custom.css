@@ -1,0 +1,214 @@
+/* === Header === */
+form .btn {
+    padding: 0;
+}
+button.show.btn {
+    background: var(--grey-color);
+}
+/* ======== CONTENT ======= */
+/* === Cards === */
+.card {
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px solid transparent; 
+    border-radius: 1em;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+@media (min-width: 768px) {
+    /* Usunięcie marginesu z lewej dla pierwszej karty */
+    .first-card .card{
+        margin-left: 0;
+    }
+    /* Usunięcie marginesu z prawej dla ostatniej karty */
+    .last-card .card {
+        margin-right: 0;
+    }
+}
+.card:hover {
+    background: var(--beige-color);
+    border: 5px solid var(--white-color);
+}
+
+.card-head {
+    padding: 1rem;
+}
+.card img {
+    width: 44px;
+}
+.card .card-body a {
+    display: inline-flex;
+    gap: 0;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+
+}
+.card .card-body span {
+    display: block;
+    padding: .75em;
+}
+.card:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .25);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .25);
+}
+.card img {
+    opacity: 0.75;
+    transform: scale(0.85);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.card:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.card:hover .card-body a {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    border: none;
+    background: var(--grey-color);
+    border-radius: .5em;
+    
+}
+.card:hover .card-body a svg path {
+    fill: var(--primary-color);
+}
+.card:hover .card-body a:hover {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+.card:hover .card-body a:hover svg path{
+    fill: var(--white-color);
+}
+
+/* === O firmie === */
+@media screen and (min-width: 768px) {
+    .green .photo {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        padding-right: 0;
+        
+    }
+    .image-column img {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        
+    }
+}
+
+.green .btn.frame {
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+}
+.green .btn.frame:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+    background-color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+}
+.green .btn.frame:hover span {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.green .btn.frame:hover svg path {
+    fill: var(--primary-color);
+}
+.green .btn.frame:hover span:first-child {
+    transform: translateX(.5em);
+    transition: all 0s ease;
+}
+.green .btn.frame:hover span:last-child {
+    transform: translateX(4em);
+    opacity: 0;
+}
+
+/* === Gallery === */
+.gallery {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+
+.gallery li {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .gallery li {
+        width: calc(34% - 30px);
+    }
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery-wrapper {
+    overflow: hidden;
+    max-height: 75vh;
+}
+.gallery-wrapper.expanded  {
+    max-height: none !important;
+}
+.gallery-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--beige-color));
+}
+.gallery-wrapper.expanded::after {
+    display: none;
+}
+
+.expand-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: max-content;
+    border: 1px solid var(--primary-color);
+}
+
+/* === Social === */
+a.social {
+    padding: .5em 1.25em;
+    color: var(--secondary-color);
+}
+a.social:hover {
+    color: var(--white-color);
+    background: var(--beige-color);
+}
+/* === Footer === */
+footer .footer_menu a {
+    padding: .35em 0;
+    color: var(--grey-color);
+}
+footer .footer_menu a:hover {
+    color: var(--beige-color);
+    border-bottom: 1px solid var(--beige-color);
+}
+footer .copyright p {
+    margin: 0;
+}

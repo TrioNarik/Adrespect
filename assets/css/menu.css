@@ -1,0 +1,145 @@
+/* ==== MAIN MENU ==== */
+nav ul {
+    margin: 0 1em;
+}
+nav ul li {
+    margin: 0;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: .5em 1em;
+    color: var(--primary-color);
+    border-radius: .25em;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: var(--white-color);
+    position: absolute;
+    z-index: 100;
+    min-width: 200px;
+    border-radius: .25em;
+  }
+
+.submenu.active {
+display: block;
+}
+.has-submenu.active .submenu {
+display: block;
+}
+
+.has-submenu.active .submenu li {
+padding: 10px;
+}
+
+.submenu.active li a:hover {
+color: var(--primary-color);
+background: var(--grey-color);
+}
+
+.has-submenu .has-submenu .submenu {
+top: 0;
+right: 100%;
+}
+/* Search Form === */
+nav .search_form button svg path {
+    fill: var(--primary-color);
+}
+nav .search_form button svg path:hover {
+    fill: var(--secondary-color);
+}
+nav .search_form form {
+    position: relative;
+}
+nav .search_form form input {
+    padding-right: 2.5em;
+}
+nav .search_form form button {
+    position: absolute;
+    right: 2em;
+    top: 1.95em;
+}
+nav .search_form form button .bi-eye-fill::before {
+    color: var(--primary-color);
+}
+
+/* Mobile Menu Hamburger === */
+.hamburger {
+    display: none;
+    width: 3.5rem;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    border-radius: .25rem;
+}
+  
+.bar {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+  }
+  
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+    } 
+    nav ul {
+        flex-direction: column;
+        min-width: 200px;
+        margin: 0;
+        padding: 1em 0;
+        position: absolute;
+        z-index: 50;
+        transform: scaleY(0);
+        top: -100%;
+        background-color: var(--grey-color);
+        border-radius: .5em;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+    }
+    nav ul.active {
+      right: 0;
+      top: 100%;
+      transform: scaleY(1);
+    }
+    nav ul.active a {
+        color: var(--primary-color);
+    }
+
+    nav ul li:hover ul {
+        top: -25%;
+        left: 50%;
+        border-radius: 10px;
+        
+    }
+
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active {
+        background: var(--beige-color);
+      }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }

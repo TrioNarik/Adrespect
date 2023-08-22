@@ -1,0 +1,62 @@
+/* ==== HERO SECTION ==== */
+@media screen and (min-width: 768px) {
+    .slider .photo {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        padding-right: 0;
+        text-align:right;
+    }
+}
+.slider button {
+    border: 1px solid var(--secondary-color);
+}
+.slider button:hover {
+    color: var(--grey-color);
+    background-color: var(--primary-color);
+}
+.slider button span {
+    display: block;
+}
+.slider button:hover svg path {
+    fill: var(--white-color);
+}
+/* === */
+.slider-item {
+    display: none;
+}
+
+.slider-item.active {
+    display: block;
+}
+
+.slider-controls {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+    background-color: var(--grey-color);
+}
+.slider-controls button {
+    height: 56px;
+    width: 56px;
+    background-color: var(--grey-color);
+    border: none;
+    cursor: pointer;  
+}
+@media screen and (min-width: 768px) {
+    .slider-controls {
+        right: 0;
+        transform: translateX(0%);
+    }
+    .slider-controls button {
+        height: 96px;
+        width: 96px;
+    }
+}
+.slider-controls button:hover {
+    background-color: var(--beige-color);
+    border: none;
+    cursor: pointer;  
+}

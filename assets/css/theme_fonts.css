@@ -1,0 +1,7 @@
+/* ==== MAIN FONTS ==== */
+
+/* ==== font-family: 'Montserrat', sans-serif; => H1-H6 ===*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400;1,600&display=swap');
+
+/* ==== font-family: 'Inter', sans-serif => Content ===*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&family=Montserrat:ital,wght@0,200;0,400;0,600;1,400;1,600&display=swap');
